@@ -1,94 +1,22 @@
 [
   {
-    "tag": "eu1",
-    "name": "🇪🇺 Europe 1",
-    "protocol": "vless",
-
-    "address": "secure.tidalpoppy.one",
-    "port": 443,
-
-    "uuid": "7441a429-bbdd-4a8b-8d57-c0d529ee2720",
-
-    "transport": {
-      "type": "tcp",
-      "security": "reality",
-
-      "flow": "xtls-rprx-vision",
-
-      "publicKey": "PluulPBmWIBUccwvQUoNKfNTrM-eugJgAEA_VtbFv2Y",
-
-      "serverName": "www.techradar.com",
-
-      "shortId": "ea19bffddb9a",
-
-      "fingerprint": "firefox"
-    }
+    "name": "Europe 1",
+    "flag": "🇪🇺",
+    "url": "vless://7441a429-bbdd-4a8b-8d57-c0d529ee2720@secure.tidalpoppy.one:443?security=reality&encryption=none&pbk=PluulPBmWIBUccwvQUoNKfNTrM-eugJgAEA_VtbFv2Y&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=www.techradar.com&sid=ea19bffddb9a"
   },
-
   {
-    "tag": "eu2",
-    "name": "🇪🇺 Europe 2",
-    "protocol": "vless",
-
-    "address": "forum.punyowe.top",
-    "port": 443,
-
-    "uuid": "d261feed-2e17-4e7b-b4a2-b908ac75ad1e",
-
-    "transport": {
-      "type": "tcp",
-      "security": "reality",
-
-      "flow": "xtls-rprx-vision",
-
-      "publicKey": "S_PL9mpDytg1irdAsMTRQhv2WJDEcKxBqp7UbJ4iS04",
-
-      "serverName": "www.mozilla.org",
-
-      "shortId": "f9c89442ce0b",
-
-      "fingerprint": "firefox"
-    }
+    "name": "Europe 2",
+    "flag": "🇪🇺",
+    "url": "vless://d261feed-2e17-4e7b-b4a2-b908ac75ad1e@forum.punyowe.top:443?security=reality&encryption=none&pbk=S_PL9mpDytg1irdAsMTRQhv2WJDEcKxBqp7UbJ4iS04&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=www.mozilla.org&sid=f9c89442ce0b"
   },
-
   {
-    "tag": "nl1",
-    "name": "🇳🇱 Netherlands 1",
-
-    "protocol": "vless",
-
-    "address": "media.ambergreen.cyou",
-    "port": 443,
-
-    "uuid": "a3167e98-452f-4e74-b1a2-b11a4b04f0aa",
-
-    "transport": {
-      "type": "tcp",
-      "security": "reality",
-
-      "flow": "xtls-rprx-vision",
-
-      "publicKey": "ifITh9W2svlOsUmuPouDIy41b3PRmIbJQQMEyTu75no",
-
-      "serverName": "www.mozilla.org",
-
-      "shortId": "ce5369437a65",
-
-      "fingerprint": "chrome"
-    }
+    "name": "Netherlands 1",
+    "flag": "🇳🇱",
+    "url": "vless://a3167e98-452f-4e74-b1a2-b11a4b04f0aa@media.ambergreen.cyou:443?security=reality&encryption=none&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&pbk=ifITh9W2svlOsUmuPouDIy41b3PRmIbJQQMEyTu75no&sni=www.mozilla.org&sid=ce5369437a65"
   },
-
   {
-    "tag": "nl2",
-    "name": "🇳🇱 Netherlands 2",
-
-    "protocol": "shadowsocks",
-
-    "address": "media.ambergreen.cyou",
-    "port": 44742,
-
-    "method": "chacha20-ietf-poly1305",
-
-    "password": "asVS7rboHnPeUWqiRC4ZWLdPH9TtFZP3XoewNWo22wmgSPVHBURntmqaqWiMxHR4b3d19TUxiq8Vugp2mszz3UAT6dUoUF7h"
+    "name": "Netherlands 2",
+    "flag": "🇳🇱",
+    "url": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphc1ZTN3Jib0huUGVVV3FpUkM0WldMZFBIOVR0RlpQM1hvZXdOV28yMndtZ1NQVkhCVVJudG1xYXFXaU14SFI0YjNkMTlUVXhpcThWdWdwMm1zenozVUFUNmRVb1VGN2g=@media.ambergreen.cyou:44742/?outline=1&prefix=%16%03%01%00%C2%A8%01%01"
   }
 ]
