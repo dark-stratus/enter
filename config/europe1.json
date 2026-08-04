@@ -195,84 +195,80 @@
     }
   },
   "remarks" : "🇪🇺 Europe 1",
-  "routing" : {
-    "balancers" : [
-      {
-        "fallbackTag" : "fallback",
-        "selector" : [
-          "proxy"
-        ],
-        "strategy" : {
-          "settings" : {
-            "baselines" : [
-              "200ms",
-              "500ms"
-            ],
-            "expected" : 1,
-            "maxRTT" : "1500ms",
-            "tolerance" : 0
-          },
-          "type" : "leastLoad"
+  "routing": {
+  "balancers": [
+    {
+      "fallbackTag": "fallback",
+      "selector": [
+        "proxy"
+      ],
+      "strategy": {
+        "settings": {
+          "baselines": [
+            "200ms",
+            "500ms"
+          ],
+          "expected": 1,
+          "maxRTT": "1500ms",
+          "tolerance": 0
         },
-        "tag" : "Auto_Balancer"
-      }
-    ],
-    "domainStrategy" : "IPIfNonMatch",
-    "rules" : [
-      {
-        {
-    "network": "tcp,udp",
-    "outboundTag": "proxy",
-    "type": "field"
+        "type": "leastLoad"
+      },
+      "tag": "Auto_Balancer"
+    }
+  ],
+  "domainStrategy": "IPIfNonMatch",
+  "rules": [
+    {
+      "balancerTag": "Auto_Balancer",
+      "ip": [
+        "1.1.1.1"
+      ],
+      "port": 443,
+      "type": "field"
+    },
+    {
+      "ip": [
+        "8.8.8.8"
+      ],
+      "outboundTag": "direct",
+      "port": 443,
+      "type": "field"
+    },
+    {
+      "inboundTag": [
+        "metrics_in"
+      ],
+      "outboundTag": "metrics_out",
+      "type": "field"
+    },
+    {
+      "domain": [
+        "domain:.ru",
+        "domain:.xn--p1ai"
+      ],
+      "outboundTag": "direct",
+      "type": "field"
+    },
+    {
+      "ip": [
+        "10.0.0.0/8",
+        "172.16.0.0/12",
+        "192.168.0.0/16",
+        "169.254.0.0/16",
+        "224.0.0.0/4",
+        "255.255.255.255/32"
+      ],
+      "outboundTag": "direct",
+      "type": "field"
+    },
+    {
+      "network": "tcp,udp",
+      "outboundTag": "proxy",
+      "type": "field"
+    }
+  ]
 },
-        "ip" : [
-          "1.1.1.1"
-        ],
-        "port" : 443,
-        "type" : "field"
-      },
-      {
-        "ip" : [
-          "8.8.8.8"
-        ],
-        "outboundTag" : "direct",
-        "port" : 443,
-        "type" : "field"
-      },
-      {
-        "inboundTag" : [
-          "metrics_in"
-        ],
-        "outboundTag" : "metrics_out",
-        "type" : "field"
-      },
-      {
-        "domain" : [
-          "domain:.ru",
-          "domain:.xn--p1ai"
-        ],
-        "outboundTag" : "direct",
-        "type" : "field"
-      },
-      {
-        "ip" : [
-          "10.0.0.0\/8",
-          "172.16.0.0\/12",
-          "192.168.0.0\/16",
-          "169.254.0.0\/16",
-          "224.0.0.0\/4",
-          "255.255.255.255\/32"
-        ],
-        "outboundTag" : "direct",
-        "type" : "field"
-      },
-      {
-        "balancerTag" : "Auto_Balancer",
-        "network" : "tcp,udp",
-        "type" : "field"
-      }
-    ]
-  },
   "stats" : {
 
   }
