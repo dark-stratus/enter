@@ -1,8 +1,14 @@
 [
   {
-    "name": "Netherlands",
+    "name": "Netherlands 1",
     "flag": "🇳🇱",
     "type": "vless",
     "url": "vless://7441a429-bbdd-4a8b-8d57-c0d529ee2720@secure.tidalpoppy.one:443?security=reality&encryption=none&pbk=PluulPBmWIBUccwvQUoNKfNTrM-eugJgAEA_VtbFv2Y&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=www.techradar.com&sid=ea19bffddb9a"
+  },
+  {
+    "name": "Netherlands 2",
+    "flag": "🇳🇱",
+    "type": "vless",
+    "url": "vless://d261feed-2e17-4e7b-b4a2-b908ac75ad1e@forum.punyowe.top:443?security=reality&encryption=none&pbk=S_PL9mpDytg1irdAsMTRQhv2WJDEcKxBqp7UbJ4iS04&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=www.mozilla.org&sid=f9c89442ce0b"
   }
 ]
