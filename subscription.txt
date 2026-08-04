@@ -1,1 +1,1 @@
-vless://a3167e98-452f-4e74-b1a2-b11a4b04f0aa@media.ambergreen.cyou:443?security=reality&encryption=none&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&pbk=ifITh9W2svlOsUmuPouDIy41b3PRmIbJQQMEyTu75no&sni=www.mozilla.org&sid=ce5369437a65#🇳🇱 Netherlands
+vless://7441a429-bbdd-4a8b-8d57-c0d529ee2720@secure.tidalpoppy.one:443?security=reality&encryption=none&pbk=PluulPBmWIBUccwvQUoNKfNTrM-eugJgAEA_VtbFv2Y&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=www.techradar.com&sid=ea19bffddb9a#🇳🇱%20Netherlands
