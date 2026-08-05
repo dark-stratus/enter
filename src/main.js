@@ -11,26 +11,23 @@ export default {
 
             const base = new URL(request.url).origin;
 
-            const [
-                branding,
-                servers,
-                dns,
-                routing
-            ] = await Promise.all([
+           const [
+    branding,
+    servers,
+    dns
+] = await Promise.all([
 
-                load(base, "branding.json"),
-                load(base, "servers.json"),
-                load(base, "dns.json"),
-                load(base, "routing.json")
+    load(base, "branding.json"),
+    load(base, "servers.json"),
+    load(base, "dns.json")
 
-            ]);
+]);
 
             const config = buildConfig({
 
                 branding,
                 servers,
                 dns,
-                routing
 
             });
 
