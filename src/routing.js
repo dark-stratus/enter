@@ -1,16 +1,12 @@
 export function buildRouting(servers) {
 
-    const selector = [];
-
-    for (const server of servers) {
-
-        selector.push(server.tag);
-
-    }
+    const selector = servers.map(server => server.tag);
 
     return {
 
         domainStrategy: "IPIfNonMatch",
+
+        domainMatcher: "hybrid",
 
         balancers: [
 
@@ -22,9 +18,9 @@ export function buildRouting(servers) {
 
             ...buildDNSRules(),
 
-            ...buildRussiaRules(),
+            ...buildPrivateRules(),
 
-            ...buildLocalRules(),
+            ...buildRussiaRules(),
 
             buildDefaultRule()
 
@@ -33,6 +29,7 @@ export function buildRouting(servers) {
     };
 
 }
+
 function buildAutoBalancer(selector){
 
     return{
@@ -49,17 +46,9 @@ function buildAutoBalancer(selector){
 
                 expected:selector.length,
 
-                baselines:[
-
-                    "200ms",
-
-                    "500ms"
-
-                ],
-
                 maxRTT:"1500ms",
 
-                tolerance:0
+                tolerance:50
 
             }
 
@@ -69,19 +58,13 @@ function buildAutoBalancer(selector){
 
 }
 
-function buildRussiaRules(){
+function buildDNSRules(){
 
-    return[
+    return [
 
         {
 
-            domain:[
-
-                "domain:.ru",
-
-                "domain:.xn--p1ai"
-
-            ],
+            inboundTag:["dns-in"],
 
             outboundTag:"direct",
 
@@ -93,21 +76,27 @@ function buildRussiaRules(){
 
 }
 
-function buildLocalRules(){
+function buildPrivateRules(){
 
-    return[
+    return [
 
         {
 
             ip:[
 
-                "10.0.0.0/8",
+                "geoip:private"
 
-                "172.16.0.0/12",
+            ],
 
-                "192.168.0.0/16",
+            outboundTag:"direct",
 
-                "169.254.0.0/16",
+            type:"field"
+
+        },
+
+        {
+
+            ip:[
 
                 "224.0.0.0/4",
 
@@ -125,21 +114,32 @@ function buildLocalRules(){
 
 }
 
-function buildDNSRules(){
+function buildRussiaRules(){
 
-    return[
+    return [
 
         {
 
-            ip:[
+            domain:[
 
-                "1.1.1.1"
+                "geosite:category-ru"
 
             ],
 
-            port:443,
+            outboundTag:"direct",
 
-            balancerTag:"Auto_Balancer",
+            type:"field"
+
+        },
+
+        {
+
+            domain:[
+
+                "geosite:ru"
+            ],
+
+            outboundTag:"direct",
 
             type:"field"
 
@@ -149,11 +149,8 @@ function buildDNSRules(){
 
             ip:[
 
-                "8.8.8.8"
-
+                "geoip:ru"
             ],
-
-            port:443,
 
             outboundTag:"direct",
 
