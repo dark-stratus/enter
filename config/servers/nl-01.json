@@ -1,26 +1,15 @@
 {
-  "name": "Europe 1",
-  "tag": "nl-01",
+    "remarks":"🇪🇺 Europe 1",
 
-  "protocol": "vless",
+    "address":"secure.tidalpoppy.one",
 
-  "address": "secure.tidalpoppy.one",
-  "port": 443,
+    "port":443,
 
-  "uuid": "7441a429-bbdd-4a8b-8d57-c0d529ee2720",
+    "uuid":"7441a429-bbdd-4a8b-8d57-c0d529ee2720",
 
-  "transport": {
-    "type": "tcp",
-    "security": "reality",
+    "publicKey":"PluulPBmWIBUccwvQUoNKfNTrM-eugJgAEA_VtbFv2Y",
 
-    "flow": "xtls-rprx-vision",
+    "shortId":"ea19bffddb9a",
 
-    "fingerprint": "firefox",
-
-    "publicKey": "PluulPBmWIBUccwvQUoNKfNTrM-eugJgAEA_VtbFv2Y",
-
-    "serverName": "www.techradar.com",
-
-    "shortId": "ea19bffddb9a"
-  }
+    "serverName":"www.techradar.com"
 }
