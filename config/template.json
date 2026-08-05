@@ -1,7 +1,4 @@
 {
-  "dns" : {
-    "queryStrategy" : "UseIPv4"
-  },
   "inbounds" : [
     {
       "listen" : "127.0.0.1",
