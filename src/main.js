@@ -12,24 +12,54 @@ export default {
             const base = new URL(request.url).origin;
 
            const [
+
     branding,
-    servers,
+
+    server,
+
     dns
+
 ] = await Promise.all([
 
     load(base, "branding.json"),
-    load(base, "servers.json"),
+
+    loadServer(base, "nl-01.json"),
+
+    load(base, "dns.json")
+
+]);
+
+    load(base, "branding.json"),
+    async function loadServer(base, file) {
+
+    const response = await fetch(
+
+        `${base}/config/servers/${file}`
+
+    );
+
+    if (!response.ok) {
+
+        throw new Error(`${file} not found`);
+
+    }
+
+    return response.json();
+
+},
     load(base, "dns.json")
 
 ]);
 
             const config = buildConfig({
 
-                branding,
-                servers,
-                dns,
+    branding,
 
-            });
+    servers: [server],
+
+    dns
+
+});
 
             return new Response(
 
