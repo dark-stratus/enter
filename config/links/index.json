@@ -1,4 +1,10 @@
 [
-    "europe-1",
-    "europe-2"
+  {
+    "id": "europe-1",
+    "remarks": "🇪🇺 Europe 1"
+  },
+  {
+    "id": "europe-2",
+    "remarks": "🇪🇺 Europe 2"
+  }
 ]
