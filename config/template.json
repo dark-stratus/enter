@@ -114,15 +114,4 @@
     }
   ],
   "remarks" : "🇩🇪LTE Torrent✅",
-  "routing" : {
-    "domainStrategy" : "AsIs",
-    "rules" : [
-      {
-        "inboundTag" : [
-          "socks-direct"
-        ],
-        "outboundTag" : "direct"
-      }
-    ]
-  }
 }
