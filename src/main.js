@@ -12,23 +12,18 @@ export default {
             const base = new URL(request.url).origin;
 
            const [
-
     branding,
-
     server,
-
     dns
-
 ] = await Promise.all([
 
     load(base, "branding.json"),
 
-    loadServer(base, "nl-01.json"),
+    load(base, "servers/nl-01.json"),
 
     load(base, "dns.json")
 
 ]);
-
     load(base, "branding.json"),
     async function loadServer(base, file) {
 
