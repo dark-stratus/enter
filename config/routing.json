@@ -1,11 +1,33 @@
 {
-  "domainStrategy": "AsIs",
+  "domainStrategy": "IPIfNonMatch",
+  "domainMatcher": "hybrid",
   "rules": [
     {
-      "inboundTag": [
-        "socks-direct"
+      "type": "field",
+      "ip": [
+        "geoip:private"
       ],
       "outboundTag": "direct"
+    },
+    {
+      "type": "field",
+      "domain": [
+        "geosite:ru",
+        "geosite:category-ru"
+      ],
+      "outboundTag": "direct"
+    },
+    {
+      "type": "field",
+      "ip": [
+        "geoip:ru"
+      ],
+      "outboundTag": "direct"
+    },
+    {
+      "type": "field",
+      "network": "tcp,udp",
+      "outboundTag": "proxy"
     }
   ]
 }
