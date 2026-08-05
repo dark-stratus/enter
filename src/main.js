@@ -88,14 +88,38 @@ async function load(base,file){
     return response.json();
 
 }
-function buildConfig(data){
+function buildConfig(data) {
 
     return {
 
-        meta:{
+        log: {
+            loglevel: "warning"
+        },
 
-            name:data.branding.title
+        dns: buildDNS(data.dns),
 
+        inbounds: buildInbounds(),
+
+        outbounds: buildOutbounds(data.servers),
+
+        routing: buildRouting(data.servers),
+
+        policy: {
+            levels: {
+                "8": {
+                    handshake: 3,
+                    connIdle: 300,
+                    uplinkOnly: 2,
+                    downlinkOnly: 4,
+                    bufferSize: 3
+                }
+            }
+        },
+
+        stats: {},
+
+        meta: {
+            name: data.branding.title
         }
 
     };
