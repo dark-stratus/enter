@@ -9,3 +9,10 @@
     }
   ]
 }
+{
+  "type": "field",
+  "ip": [
+    "geoip:private"
+  ],
+  "outboundTag": "direct"
+}
