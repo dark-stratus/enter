@@ -1,3 +1,8 @@
+import { buildOutbounds } from "./outbounds.js";
+import { buildRouting } from "./routing.js";
+import { buildDNS } from "./dns.js";
+import { buildInbounds } from "./inbounds.js";
+
 export default {
 
     async fetch(request) {
