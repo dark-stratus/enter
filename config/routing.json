@@ -26,5 +26,12 @@
       "network": "tcp,udp",
       "outboundTag": "proxy"
     }
+    {
+  "type": "field",
+  "ip": [
+    "geoip:private"
+  ],
+  "outboundTag": "direct"
+  }
   ]
 }
