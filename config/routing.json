@@ -1,0 +1,11 @@
+{
+  "domainStrategy": "AsIs",
+  "rules": [
+    {
+      "inboundTag": [
+        "socks-direct"
+      ],
+      "outboundTag": "direct"
+    }
+  ]
+}
