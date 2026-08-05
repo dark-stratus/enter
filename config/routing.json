@@ -25,7 +25,7 @@
       "type": "field",
       "network": "tcp,udp",
       "outboundTag": "proxy"
-    }
+    },
     {
   "type": "field",
   "ip": [
