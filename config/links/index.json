@@ -34,5 +34,17 @@
   {
     "id": "whitelist-1",
     "remarks": "🇷🇺 🏳️ White List 1"
+  },
+  {
+    "id": "whitelist-2",
+    "remarks": "🇷🇺 🏳️ White List 2"
+  },
+  {
+    "id": "whitelist-3",
+    "remarks": "🇷🇺 🏳️ White List 3"
+  },
+  {
+    "id": "whitelist-4",
+    "remarks": "🇷🇺 🏳️ White List 5"
   }
 ]
