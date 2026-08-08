@@ -1,1 +1,1 @@
-vless://9cb23a1e-be2e-4b63-8660-2354aebc2fb7@217.16.27.113:8443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=eh.vk.com&pbk=AiG06E-jizo9xtBbulKQvdQqhZfobZJBTQIKkaDjaiU&sid=a1b2c3d4e5
+vless://51c0ed88-bc36-4ad6-ad79-f80e3a09e326@81.200.151.81:443?type=grpc&mode=gun&serviceName=streaming&security=reality&fp=firefox&sni=max.ru&pbk=0TK3jhL8U7cKtwt8dolBOY987bVD15vL08x8pMEM428&sid=4640a2f00a8b7e06
