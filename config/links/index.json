@@ -18,41 +18,5 @@
   {
     "id": "germany-1",
     "remarks": "🇩🇪 Germany 1"
-  },
-  {
-    "id": "germany-2",
-    "remarks": "🇩🇪 Germany GAME"
-  },
-  {
-    "id": "estonia-1",
-    "remarks": "🇪🇪 Estonia 1"
-  },
-  {
-    "id": "sweden",
-    "remarks": "🇸🇪 Sweden 1"
-  },
-  {
-    "id": "whitelist-1",
-    "remarks": "🇷🇺 🏳️ White List 1"
-  },
-  {
-    "id": "whitelist-2",
-    "remarks": "🇷🇺 🏳️ White List 2"
-  },
-  {
-    "id": "whitelist-3",
-    "remarks": "🇷🇺 🏳️ White List 3"
-  },
-  {
-    "id": "whitelist-4",
-    "remarks": "🇷🇺 🏳️ White List 4"
-  },
-  {
-    "id": "whitelist-5",
-    "remarks": "🇨🇦 🏳️ White List 5"
-  },
-  {
-    "id": "whitelist-6",
-    "remarks": "🇫🇮 🏳️ White List 6"
   }
 ]
