@@ -22,5 +22,13 @@
   {
     "id": "germany-1",
     "remarks": "🇩🇪 Germany 1"
-  }
+  },
+  {
+    "id": "whitelist-1",
+    "remarks": "TEST"
+  },
+  {
+    "id": "whitelist-2",
+    "remarks": "TEST2"
+  },
 ]
